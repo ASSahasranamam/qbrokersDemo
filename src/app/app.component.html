@@ -1,0 +1,50 @@
+<!-- NavBar -->
+<nav class="navbar navbar-expand-md navbar-light " style="padding:10px 8px 8px 8px; height:60px; ">
+    <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" style="margin-right: 6px; border:1px solid #36b34a; transition: all .3s; color: #36b34a;" href="#">Table View</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="border:1px solid #36b34a; transition: all .3s; color: #36b34a;" (click)="goGraph()"> Graph View </a>
+            </li>
+
+        </ul>
+    </div>
+    <div class="mx-auto order-0">
+      <a class="navbar-brand" href="#">
+        <img src="src/app/qb_logo.png" alt="" height="40px">
+      </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" style="border:1px solid #36b34a; transition: all .3s; color: #36b34a;" href="https://linkedin.com/in/adiss">About Adithya</a>
+            </li>
+
+        </ul>
+    </div>
+    <mat-divider></mat-divider>
+
+</nav>
+
+
+<!-- Headers & AppView-->
+<div style="text-align:center">
+  <!-- <h1>
+    Quantitative Brokers
+  </h1>
+  <h3>
+  </h3> -->
+</div>
+
+ <div class="container-fluid">
+
+
+   <router-outlet></router-outlet>
+
+ </div>
